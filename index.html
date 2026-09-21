@@ -4,156 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tic Tac Toe</title>
+    <title>TIC TAE TOE</title>
 
     <style>
         * {
             box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
         }
 
         body {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            min-height: 100vh;
-            color: white;
-        }
-
-        header {
-            text-align: center;
-            padding: 60px 20px 40px;
-        }
-
-        header h1 {
-            font-size: 48px;
-            margin-bottom: 15px;
-        }
-
-        header p {
-            font-size: 20px;
-        }
-
-        .button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 14px 30px;
+            margin: 0;
             background: white;
-            color: #667eea;
-            text-decoration: none;
-            border-radius: 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Top App Bar */
+        .topbar {
+            height: 80px;
+            background: #3f51b5;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 28px;
+
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .title {
+            font-size: 32px;
             font-weight: bold;
         }
 
-        section {
-            background: white;
-            color: #333;
-            margin: 20px auto;
-            padding: 35px 25px;
-            max-width: 900px;
-            border-radius: 20px;
+        .menu {
+            font-size: 35px;
         }
 
-        section h2 {
-            color: #667eea;
-            margin-bottom: 15px;
-            font-size: 30px;
+        /* Game Area */
+        .game {
+            padding: 10px 7px;
         }
 
-        section p {
-            line-height: 1.7;
-            font-size: 17px;
-        }
+        /* 3 x 3 Board */
+        .board {
+            display: grid;
 
-        ul {
-            padding-left: 25px;
-            line-height: 2;
-            font-size: 17px;
-        }
+            grid-template-columns: repeat(3, 1fr);
 
-        footer {
-            text-align: center;
-            padding: 30px;
-        }
+            gap: 14px;
 
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 36px;
-            }
-
-            header p {
-                font-size: 17px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-        <h1>❌ Tic Tac Toe ⭕</h1>
-
-        <p>
-            A simple and fun two-player Tic Tac Toe game
-        </p>
-
-        <a class="button"
-           href="https://github.com/kanishka149/Tic-Tac-Toe">
-           View on GitHub
-        </a>
-    </header>
-
-    <section>
-        <h2>🎮 About the App</h2>
-
-        <p>
-            Tic Tac Toe is a two-player game where players
-            take turns placing X and O on a 3×3 grid.
-            The player who gets three symbols in a row,
-            column, or diagonal wins the game.
-        </p>
-    </section>
-
-    <section>
-        <h2>✨ Features</h2>
-
-        <ul>
-            <li>Two-player gameplay</li>
-            <li>3×3 game board</li>
-            <li>Automatic winner detection</li>
-            <li>Draw detection</li>
-            <li>One-tap game reset</li>
-            <li>Live game status</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>⚙️ How It Works</h2>
-
-        <p>
-            Player X starts the game by selecting an empty cell.
-            Player O then takes the next turn.
-            After every move, the game checks all possible
-            winning combinations. If a player gets three
-            symbols in a row, the game announces the winner.
-            If all cells are filled without a winner, the
-            game ends in a draw.
-        </p>
-    </section>
-
-    <section>
-        <h2>💻 Technology</h2>
-
-        <p>
-            The Android application was created using
-            MIT App Inventor with a block-based programming
-            approach.
-        </p>
-    </section>
-
-    <footer>
-        <p>© 2026 Tic Tac Toe | Created by Kanishka</p>
-    </footer>
-
-</body>
-</html>
+            width:
