@@ -19,6 +19,7 @@ A single-screen Android app, built with **MIT App Inventor**, that lets two play
 - 🤝 Draw detection when the board is full with no winner
 - 🔄 One-tap **Reset** button to restart the game
 - 🖥️ Live status label showing current turn, winner, or draw result
+[live demo]( https://kanishka149.github.io/Tic-Tac-Toe/)
 
 ## Tech Stack
 
